@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌍 AI SHAMBA SMART GUIDE </title>
+    
+    <!-- Link to our CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header class="header">
+        <div class="container">
+            <h1>🌍 AI SHAMBA SMART GUIDE </h1>
+            <p>Real-time monitoring with AI-powered predictions</p>
+            <div class="badges">
+                <span class="badge badge-blue">🛰️ GIS Enabled</span>
+                <span class="badge badge-purple">📡 Remote Sensing</span>
+                <span class="badge badge-red">⚡ Real-time Data</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+        <div class="container">
+            <div class="layout">
+                
+                <!-- LEFT SIDE: FORM -->
+                <aside class="form-section">
+                    <div class="card card-form">
+                        <h2>📍 Add New Area</h2>
+                        
+                        <form id="landForm">
+                            <!-- Land Name -->
+                            <div class="form-group">
+                                <label for="landName">Land Name</label>
+                                <input 
+                                    type="text" 
+                                    id="landName" 
+                                    placeholder="e.g., Farm A"
+                                    required
+                                >
+                            </div>
+
+                            <!-- GPS Coordinates -->
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="latitude">Latitude</label>
+                                    <input 
+                                        type="number" 
+                                        id="latitude" 
+                                        value="-1.2921" 
+                                        step="0.0001"
+                                    >
+                                </div>
+                                <div class="form-group">
+                                    <label for="longitude">Longitude</label>
+                                    <input 
+                                        type="number" 
+                                        id="longitude" 
+                                        value="36.8219" 
+                                        step="0.0001"
+                                    >
+                                </div>
+                            </div>
+
+                            <!-- Area -->
+                            <div class="form-group">
+                                <label for="areaSlider">📏 Area: <span id="areaValue">50</span> hectares</label>
+                                <input 
+                                    type="range" 
+                                    id="areaSlider" 
+                                    min="10" 
+                                    max="500" 
+                                    value="50"
+                                >
+                            </div>
+
+                            <!-- Soil Health -->
+                            <div class="form-group">
+                                <label for="soilSlider">🌾 Soil Health: <span id="soilValue">50</span>%</label>
+                                <input 
+                                    type="range" 
+                                    id="soilSlider" 
+                                    min="0" 
+                                    max="100" 
+                                    value="50"
+                                >
+                            </div>
+
+                            <!-- Moisture -->
+                            <div class="form-group">
+                                <label for="moistureSlider">💧 Moisture: <span id="moistureValue">50</span>%</label>
+                                <input 
+                                    type="range" 
+                                    id="moistureSlider" 
+                                    min="0" 
+                                    max="100" 
+                                    value="50"
+                                >
+                            </div>
+
+                            <!-- Temperature -->
+                            <div class="form-group">
+                                <label for="tempSlider">🌡️ Temperature: <span id="tempValue">20</span>°C</label>
+                                <input 
+                                    type="range" 
+                                    id="tempSlider" 
+                                    min="0" 
+                                    max="50" 
+                                    value="20"
+                                >
+                            </div>
+
+                            <!-- Trees -->
+                            <div class="form-group">
+                                <label for="treesInput">🌳 Trees: <span id="treesValue">0</span></label>
+                                <input 
+                                    type="number" 
+                                    id="treesInput" 
+                                    min="0" 
+                                    max="10000" 
+                                    value="0"
+                                >
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary">
+                                ➕ Add Land Area
+                            </button>
+                        </form>
+                    </div>
+                </aside>
+
+                <!-- RIGHT SIDE: DISPLAY -->
+                <section class="display-section">
+                    <div id="landsContainer" class="lands-container">
+                        <!-- Cards will be added here by JavaScript -->
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER: EDUCATIONAL INFO -->
+    <footer class="footer">
+        <div class="container">
+            <h3>📚 How This AI System Works</h3>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h4>🛰️ Remote Sensing</h4>
+                    <p>Satellites take pictures of your land. NDVI measures how green and healthy plants are!</p>
+                </div>
+                <div class="info-card">
+                    <h4>📍 GIS Mapping</h4>
+                    <p>We use latitude & longitude to map exactly where your land is on Earth!</p>
+                </div>
+                <div class="info-card">
+                    <h4>⚡ Real-time Data</h4>
+                    <p>Weather updates every 5 seconds! Rain, wind, humidity - all live data!</p>
+                </div>
+                <div class="info-card">
+                    <h4>🤖 AI Prediction</h4>
+                    <p>The AI learns patterns and predicts droughts, floods, and soil problems!</p>
+                </div>
+            </div>
+        </div>
+
+           <p> 2025 copyright AI shamba guide 🦮</p>
+    </footer>
+
+    <!-- Link to our JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

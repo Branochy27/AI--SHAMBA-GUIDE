@@ -3,7 +3,7 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const connectDB = require('./config/database');
+const connectDB = require('./config/db');
 
 // Connect to MongoDB
 connectDB();
@@ -49,4 +49,5 @@ app.listen(PORT, () => {
   ║  ✅ Ready to receive requests!      ║
   ╚════════════════════════════════════╝
   `);
+
 });

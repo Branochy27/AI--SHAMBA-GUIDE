@@ -22,6 +22,8 @@ Feel free to fork this repository and submit pull requests. For major changes, p
 
 BACKENED FEATURES
 
+
+
 land-monitoring/
 ├── frontend/
 │   ├── index.html
@@ -30,6 +32,8 @@ land-monitoring/
 │   ├── config.js
 │   └── api.js                    ⭐ NEW (talks to backend)
 │
+
+
 ├── backend/
 │   ├── config/
 │   │   ├── database.js           🔌 Connects to MongoDB
